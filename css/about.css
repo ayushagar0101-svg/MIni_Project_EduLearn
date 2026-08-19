@@ -54,8 +54,6 @@
         * {
             margin: 0;
             padding: 0;
-            color: #D6D9E2;
-           
         }
         .footer{
             background-color: #0F172A;
@@ -86,11 +84,12 @@
         .item{
             display: flex;
             flex-direction: column;
-            
+            color: white;
              gap: 20px;
         }
         .item a {
             text-decoration: none;
+            color: white;
         }
         .item h4{
             color: white;
@@ -203,4 +202,389 @@
     height: 400px;
     object-fit: cover;
     border-radius: 18px;
+}
+
+      /* Values Section */
+.values-section {
+    padding: 80px 60px;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+}
+
+
+
+.values-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.values-header h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2864e8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.values-header h1 {
+    font-size: 42px;
+    color: #0f172a;
+    font-weight: 800;
+    margin: 0;
+}
+
+.values-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.value-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
+}
+.value-card p{
+    gap: 20px;
+    color: #58708f;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(30, 64, 175, 0.2);
+    /* border-top-color: #2864e8; */
+}
+
+.card-icon {
+    margin-bottom: 25px;
+}
+
+.card-icon img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 22px;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #58708f;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .values-section {
+        padding: 60px 30px;
+    }
+
+    .values-title {
+        font-size: 32px;
+    }
+
+    .values-cards {
+        gap: 25px;
+    }
+
+    .value-card {
+        padding: 30px 20px;
+    }
+}
+/* =========================
+   Learning Path Section
+   ========================= */
+
+.unit-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 70px 20px 80px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+.unit-header {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.unit-subtitle {
+  display: inline-block;
+  margin: 0 0 25px;
+  padding: 13px 24px;
+  border-radius: 30px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.unit-header h1 {
+  margin: 0;
+  color: #071a3d;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+/* =========================
+   Units
+   ========================= */
+
+.unit-cards {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.unit-card {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  column-gap: 20px;
+  align-items: start;
+}
+
+
+
+.unit-number {
+  width: 58px;
+  height: 58px;
+
+  border: 3px solid #2864e8;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2864e8;
+  font-size: 21px;
+  font-weight: 500;
+
+  background: #f8fafc;
+  box-sizing: border-box;
+}
+
+
+
+.unit-card h2 {
+  margin: 3px 0 10px;
+
+  color: #071a3d;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.unit-card p {
+  margin: 0;
+
+  color: #58708f;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .unit-section {
+    padding: 55px 20px 60px;
+  }
+
+  .unit-header {
+    margin-bottom: 55px;
+  }
+
+  .unit-header h1 {
+    font-size: 36px;
+  }
+
+  .unit-subtitle {
+    font-size: 16px;
+    padding: 11px 20px;
+  }
+
+  .unit-cards {
+    gap: 35px;
+  }
+
+  .unit-card {
+    grid-template-columns: 60px 1fr;
+    column-gap: 15px;
+  }
+
+  .unit-number {
+    width: 52px;
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .unit-card h2 {
+    font-size: 20px;
+  }
+
+  .unit-card p {
+    font-size: 17px;
+  }
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 480px) {
+
+  .unit-section {
+    padding: 45px 16px 50px;
+  }
+
+  .unit-header {
+    margin-bottom: 45px;
+  }
+
+  .unit-header h1 {
+    font-size: 30px;
+  }
+
+  .unit-subtitle {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .unit-cards {
+    gap: 30px;
+  }
+
+  .unit-card {
+    grid-template-columns: 50px 1fr;
+    column-gap: 12px;
+  }
+
+  .unit-number {
+    width: 46px;
+    height: 46px;
+    border-width: 2px;
+    font-size: 16px;
+  }
+
+  .unit-card h2 {
+    margin-top: 1px;
+    font-size: 18px;
+  }
+
+  .unit-card p {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+}
+/* 
+status-section */
+
+.stats-section {
+  width: 100%;
+  min-height: 180px;
+
+  background: linear-gradient(
+    110deg,
+    #2945ad,
+    #2563eb
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+/* 
+  padding: 20px 20px; */
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+}
+
+.stat h2 {
+  /* margin: 0 0 16px; */
+
+  color: white;
+
+  font-size: 25px;
+  font-weight: 800;
+
+ 
+}
+
+.stat p {
+  margin: 0;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 400;
+
+ 
+}
+
+
+@media (max-width: 768px) {
+
+  .stats-section {
+    padding: 40px 20px;
+  }
+
+  .stat h2 {
+    font-size: 44px;
+  }
+
+  .stat p {
+    font-size: 19px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .stats-section {
+    min-height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px 20px;
+
+    padding: 50px 20px;
+  }
+
+  .stat h2 {
+    font-size: 38px;
+  }
+
+  .stat p {
+    font-size: 17px;
+  }
 }
