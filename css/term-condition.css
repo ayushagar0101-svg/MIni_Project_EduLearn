@@ -114,3 +114,176 @@
                 gap: 20px;
             }
         }
+
+        /* main-section */
+
+        .terms-section {
+    min-height: calc(100vh - 220px);
+
+    background-color: #f7f9fc;
+
+    padding: 70px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* Terms Card */
+
+.terms-card {
+    width: 900px;
+
+    background-color: white;
+
+    border: 1px solid #dce3ed;
+
+    border-radius: 17px;
+
+    padding: 45px;
+
+    box-shadow: 0 8px 30px rgba(20, 40, 80, 0.08);
+}
+
+
+/* Heading */
+
+.terms-card h2 {
+    text-align: center;
+
+    font-size: 32px;
+
+    color: #071536;
+
+    margin-bottom: 25px;
+}
+
+.terms-card h2 i {
+    color: #2864e8;
+
+    margin-right: 8px;
+}
+
+
+/* Introduction */
+
+.intro {
+    text-align: center;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #526581;
+
+    margin-bottom: 35px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #e1e7ef;
+}
+
+
+/* Terms Content */
+
+.terms-content section {
+    margin-bottom: 28px;
+}
+
+.terms-content h3 {
+    font-size: 20px;
+
+    color: #243b64;
+
+    margin-bottom: 10px;
+}
+
+.terms-content p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #5b6b84;
+
+    margin: 0;
+}
+
+
+/* Footer */
+
+.terms-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e1e7ef;
+}
+
+.terms-footer p {
+    color: #718096;
+
+    font-size: 14px;
+}
+
+
+/* Back Button */
+
+.back-btn {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    background-color: #2864e8;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #1d4fc2;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .terms-section {
+        padding: 40px 15px;
+    }
+
+    .terms-card {
+        width: 100%;
+
+        padding: 30px 22px;
+    }
+
+    .terms-card h2 {
+        font-size: 27px;
+    }
+
+    .terms-footer {
+        flex-direction: column;
+
+        gap: 18px;
+
+        text-align: center;
+    }
+
+}

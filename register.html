@@ -27,9 +27,98 @@
 
         </header>
     </section>
-    <main>
-        <h1>register page </h1>
-    </main>
+    <main class="register-section">
+
+    <div class="register-card">
+
+        <h2>
+            <i class="fa-solid fa-user-plus"></i>
+            Create Account
+        </h2>
+
+        <form>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text"
+                           id="name"
+                           placeholder="Enter your name"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email"
+                           id="email"
+                           placeholder="Enter your email"
+                           required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel"
+                           id="phone"
+                           placeholder="Enter phone number"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="student-id">Student ID</label>
+                    <input type="text"
+                           id="student-id"
+                           placeholder="Enter student ID"
+                           required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password"
+                           id="password"
+                           placeholder="Create password"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password"
+                           id="confirm-password"
+                           placeholder="Confirm password"
+                           required>
+                </div>
+
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">
+                    I agree to the Terms and Conditions
+                </label>
+            </div>
+
+            <button type="submit" class="register-btn">
+                Register
+            </button>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</main>
 
     <!-- footer -->
     <footer class="footer">

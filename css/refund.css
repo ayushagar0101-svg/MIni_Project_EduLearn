@@ -114,3 +114,93 @@
                 gap: 20px;
             }
         }
+
+/* Refund page main content */
+.page-header {
+    padding: 72px 20px 68px;
+    text-align: center;
+    background: radial-gradient(circle at 85% 0, #dcecff 0, transparent 35%), #eaf1fb;
+}
+
+.page-header .container,
+.section .container {
+    width: min(100%, 940px);
+    margin: 0 auto;
+}
+
+.page-header h1 {
+    color: #101a36;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.page-header p {
+    margin-top: 12px;
+    color: #667085;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 1.05rem;
+}
+
+.section {
+    padding: 64px 20px 80px;
+    background: #f4f7fb;
+}
+
+.policy-content {
+    padding: clamp(28px, 5vw, 56px);
+    border: 1px solid #dbe3f0;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 16px 40px rgba(23, 33, 59, 0.08);
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.policy-content h2 {
+    margin: 30px 0 10px;
+    color: #101a36;
+    font-size: 1.25rem;
+    line-height: 1.35;
+}
+
+.policy-content h2:first-child {
+    margin-top: 0;
+}
+
+.policy-content p,
+.policy-content li {
+    color: #475467;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.policy-content ul,
+.policy-content ol {
+    margin: 8px 0 0 24px;
+}
+
+.policy-content li {
+    padding-left: 5px;
+}
+
+.policy-content li::marker {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.policy-content strong {
+    color: #17213b;
+}
+
+@media (max-width: 740px) {
+    .page-header {
+        padding: 56px 20px;
+    }
+
+    .section {
+        padding: 36px 14px 52px;
+    }
+
+    .policy-content {
+        padding: 28px 22px;
+    }
+}
